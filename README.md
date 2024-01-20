@@ -1,2 +1,2 @@
 # luxury-presence-assessment
-An assessment t revamp a site
+An assessment to revamp a website
