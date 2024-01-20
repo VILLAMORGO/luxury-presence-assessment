@@ -1,0 +1,45 @@
+<header>
+    <div class="header-styles main-font">
+      <div class="logo">
+        <!-- Replace the image source and alt text -->
+        <img src="logo.png" alt="Portfolio logo" />
+      </div>
+
+      <nav class="nav">
+        <a href="/" class="nav-link">MEET THE TEAM</a>
+        <a href="/portfolio" class="nav-link">MEET THE TEAM</a>
+        <a href="/contactMe" class="nav-link">OUR COMMUNITIES</a>
+        <a href="/" class="nav-link">HOME EVALUATION</a>
+        <a href="/portfolio" class="nav-link">SERVICES</a>
+        <a href="/contactMe" class="nav-link">HOME ACROSS AMERICA</a>
+        <a href="/" class="nav-link">TESTIMONIALS</a>
+        <a href="/portfolio" class="nav-link">CONTAC US</a>
+      </nav>
+
+      <button type="button" class="menu-button" onclick="toggleMenu()">
+        <svg class="menu-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <!-- Include the path for the menu icon -->
+          <path d="M4 6H20V8H4V6ZM4 11H20V13H4V11ZM4 16H20V18H4V16Z" fill-rule="evenodd" clip-rule="evenodd"/>
+        </svg>
+    </button>
+    </div>
+
+    <div class="mobile-menu" id="navbar-hamburger">
+      <ul class="menu-list">
+        <li class="menu-item"><a href="/" class="menu-link">MEET THE TEAM</a></li>
+        <li class="menu-item"><a href="/portfolio" class="menu-link">MEET THE TEAM</a></li>
+        <li class="menu-item"><a href="/contactMe" class="menu-link">OUR COMMUNITIES</a></li>
+        <li class="menu-item"><a href="/" class="menu-link">HOME EVALUATION</a></li>
+        <li class="menu-item"><a href="/portfolio" class="menu-link">SERVICES</a></li>
+        <li class="menu-item"><a href="/contactMe" class="menu-link">HOME ACROSS AMERICA</a></li>
+        <li class="menu-item"><a href="/" class="menu-link">TESTIMONIALS</a></li>
+        <li class="menu-item"><a href="/portfolio" class="menu-link">CONTAC US</a></li> 
+      </ul>
+    </div>
+</header>
+<script>
+    function toggleMenu() {
+      var mobileMenu = document.getElementById('navbar-hamburger');
+      mobileMenu.classList.toggle('open');
+    }
+</script>
