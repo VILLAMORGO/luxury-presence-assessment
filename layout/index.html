@@ -7,11 +7,18 @@
     <link rel="stylesheet" href="/css/index.css"> 
     <link href="https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:wght@400&family=Public+Sans:wght@200&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="background-color">
     <!-- Include navbar partial -->
     <idv id="header-container">
         <!-- Navbar will be injected here -->
     </div>
     <script type="module" src="/script/main.js" defer></script>
+    <script>
+        function toggleMenu() {
+          var mobileMenu = document.getElementById('navbar-hamburger');
+          mobileMenu.classList.toggle('open');
+          console.log("Mobile Menu button clicked is working");
+        }
+      </script>
 </body>
 </html>

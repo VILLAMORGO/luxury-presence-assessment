@@ -1,4 +1,8 @@
 /* This is the main CSS file */
+
+/* Import custom-styles.css */
+@import url('navbar.css');
+
 body, h1, h2, p, ul, li, a, button {
     margin: 0;
     padding: 0;
@@ -7,138 +11,13 @@ body, h1, h2, p, ul, li, a, button {
     list-style: none;
 }
 
+.background-color {
+  background-color: rgb(250,250,250);
+}
+
 .main-font {
     font-family: 'Public Sans', sans-serif;
 }
 
-/* Header Styles */
-header {
-    padding-top: 8px;
-    padding-bottom: 5px;
-    width: 100%;
-    max-width: 100%;
-    box-sizing: border-box;
-    background-color: #ffffff;
-    position: relative;
-  }
 
-  .header-styles {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 8px;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-  }
 
-  .logo {
-    display: flex;
-    align-items: center;
-  }
-
-  .logo img {
-    width: 40px;
-    height: auto;
-    margin-right: 8px;
-  }
-
-  .logo span {
-    font-size: 1.5rem;
-    font-weight: 600;
-    color: #000000;
-  }
-
-  nav {
-    display: none;
-  }
-
-  .nav-link {
-    margin-top: 4px;
-    margin-left: 10px;
-    font-size: 0.875rem;
-    font-weight: 600;
-    color: #000000;
-    transition: color 0.3s ease;
-  }
-
-  .nav-link:hover {
-    color: #00c853;
-  }
-
-  .menu-button {
-    display: inline-flex;
-    align-items: center;
-    padding: 1px;
-    margin-left: 3px;
-    font-size: 0.875rem;
-    color: #808080;
-    border: 1px solid #d4d4d4;
-    border-radius: 4px;
-    cursor: pointer;
-    background-color: #ffffff;
-    transition: background-color 0.3s ease, color 0.3s ease;
-  }
-
-  .menu-icon {
-    width: 24px;
-    height: 24px;
-    fill: currentColor;
-  }
-
-  /* Mobile Menu Styles */
-  .mobile-menu {
-    display: none;
-    width: 100%;
-  }
-
-  .menu-list {
-    display: flex;
-    flex-direction: column;
-    margin-top: 4px;
-    padding: 0;
-    border-radius: 4px;
-    background-color: #000000;
-    color: #ffffff;
-  }
-
-  .menu-item {
-    margin: 8px;
-  }
-
-  .menu-item a {
-    display: block;
-    padding: 8px 12px;
-    border-radius: 4px;
-    color: #ffffff;
-    text-align: center;
-    transition: background-color 0.3s ease, color 0.3s ease;
-  }
-
-  .menu-item a:hover {
-    background-color: #d4d4d4;
-    color: #000000;
-  }
-
-  /* Responsive Styles */
-  @media screen and (min-width: 768px) {
-    .nav {
-      display: flex;
-      justify-content: flex-end;
-      align-items: center;
-    }
-
-    .menu-button {
-      display: none;
-    }
-  }
-
-  @media screen and (max-width: 767px) {
-    .menu-button {
-      display: inline-flex;
-    }
-
-    .mobile-menu {
-      display: block;
-    }
-  }

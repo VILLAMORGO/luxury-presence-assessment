@@ -1,0 +1,253 @@
+/* Header Styles */
+header {
+    padding-top: 60px;
+    padding-bottom: 35px;
+    padding-left: 70px;
+    padding-right: 90px;
+    width: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    box-sizing: border-box;
+    background-color: rgb(158,156,156);;
+    position: relative;
+}
+
+.header-styles {
+    max-width: 1450px;
+    margin: 0 auto;
+    display: flex;
+    text-align: center;
+}
+
+.logo {
+display: flex;
+align-items: center;
+}
+
+.logo img {
+    max-width: 145px;
+    height: auto;
+    max-height: 100%;
+    vertical-align: top;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: end; 
+}
+
+.nav-link {
+    margin-top: 8px;
+    margin-bottom: 2px;
+    margin-left: 2.5rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #000000;
+    transition: color 0.3s ease;
+    letter-spacing: 1.8px;
+}
+
+.nav-link:hover {
+    color: rgb(238, 238, 238);
+}
+
+.menu-button {
+    display: inline-flex;
+    align-items: center;
+    padding: 1px;
+    margin-left: 3px;
+    font-size: 0.875rem;
+    color: #808080;
+    border: 1px solid #d4d4d4;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #ffffff;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.menu-icon {
+    width: 24px;
+    height: 24px;
+    fill: currentColor;
+}
+
+/* Mobile Menu Styles */
+.mobile-menu {
+    display: none;
+    width: 100%;
+}
+
+.menu-list {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    border-radius: 4px;
+    background-color: #000000;
+    color: #ffffff;
+    transition: color 0.3s ease;
+    letter-spacing: 1px;
+    font-size: 0.9rem;
+}
+
+.menu-item {
+    margin: 8px;
+}
+
+.menu-item a {
+    display: block;
+    padding: 8px 12px;
+    border-radius: 4px;
+    color: #ffffff;
+    text-align: center;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.menu-item a:hover {
+    background-color: #d4d4d4;
+    color: #000000;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 1450px) {
+
+    .menu-button {
+        display: none;
+    }
+
+    header {
+        padding-top: 40px;
+        padding-bottom: 30px;
+        padding-left: 50px;
+        padding-right: 90px;
+    }
+
+    .logo img {
+        max-width: 130px;
+        height: auto;
+        max-height: 100%;
+        vertical-align: top;
+        object-fit: contain;
+    }
+
+    .nav-link {
+        margin-top: 8px;
+        margin-bottom: 2px;
+        margin-left: 2.3rem;
+        font-size: 0.83rem;
+        font-weight: 600;
+        color: #000000;
+        transition: color 0.3s ease;
+        letter-spacing: 1.6px;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+
+    .menu-button {
+        display: none;
+    }
+
+    header {
+        padding-top: 35px;
+        padding-bottom: 25px;
+        padding-left: 50px;
+        padding-right: 75px;
+    }
+
+    .logo img {
+        max-width: 125px;
+        height: auto;
+        max-height: 100%;
+        vertical-align: top;
+        object-fit: contain;
+    }
+
+    .nav-link {
+        margin-top: 8px;
+        margin-bottom: 2px;
+        margin-left: 2.2rem;
+        font-size: 0.8rem;
+        font-weight: 600;
+        color: #000000;
+        transition: color 0.3s ease;
+        letter-spacing: 1.5px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+
+    .menu-button {
+        display: none;
+    }
+    
+    header {
+        padding-top: 60px;
+        padding-bottom: 35px;
+        padding-left: 30px;
+        padding-right: 50px;
+    }
+
+    .logo img {
+        max-width: 120px;
+        height: auto;
+        margin-right: 8px;
+        max-height: 100%;
+        vertical-align: top;
+        object-fit: contain;
+    }
+
+    .nav-link {
+        margin-top: auto;
+        margin-left: 1rem;
+        font-size: 0.875rem;
+        font-weight: 600;
+        color: #000000;
+        transition: color 0.3s ease;
+        letter-spacing: 1.3px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .menu-button {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .header-styles {
+        max-width: 1450px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    .menu-button {
+        display: inline-flex;
+    }
+
+    .mobile-menu {
+        display: none;
+        max-width: 0;
+        overflow: hidden;
+    }
+
+    .mobile-menu.open {
+        display: block;
+        max-width: 100%;
+        clip-path: circle(1000px at 90% -10%);
+        -webkit-clip-path: circle(1000px at 90% -10%);
+        pointer-events: all;
+        position: absolute;
+        cursor: pointer;
+        right: 0%;
+        top: 100%;
+        z-index: 1;
+    }
+}
