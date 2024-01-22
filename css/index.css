@@ -3,6 +3,7 @@
 /* Import custom-styles.css */
 @import url('navbar.css');
 @import url('intro-section.css');
+@import url('fixed-btn-span.css');
 
 body, h1, h2, p, ul, li, a, button {
     margin: 0;
