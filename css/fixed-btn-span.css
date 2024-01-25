@@ -19,18 +19,23 @@
     flex-wrap: wrap;
     align-content:  flex-end;
     justify-content: center;
-    border-bottom: 3px solid rgb(65, 61, 61);
+    border-bottom: 2px solid rgb(65, 61, 61);
     max-height: 100%;
     max-width: 100%;
     padding-left: 20px;
     padding-right: 130px;
     padding-bottom: 5px;
     margin-right: 20px;
-    font-weight: 600;
+    font-size: 0.9rem;
+    font-weight: 500;
     color: #000000;
     transition: color 0.3s ease;
     letter-spacing: 1.5px;
     cursor: pointer;
+}
+.search-span-layout:hover{
+    font-size: 1.2rem;
+    padding-left: 5px;
 }
 
 .btn-span-layout{
@@ -38,17 +43,55 @@
     flex-wrap: wrap;
     align-content: center;
     justify-content: center;
-    border: 3px solid rgb(65, 61, 61);
-    border-radius: 30px;
+    border: 2px solid rgb(51,50,61);
     max-height: 100%;
     max-width: 100%;
     padding: 11px;
     padding-left: 15px;
     padding-right: 15px;
-    font-size: 0.9rem;
-    font-weight: 600;
+    font-size: 0.75rem;
+    font-weight: 500;
     color: #000000;
     transition: color 0.3s ease;
-    letter-spacing: 1.5px;
+    letter-spacing: 1.6px;
     cursor: pointer;
 }
+
+/* Send Message Button */
+
+.message-btn{
+    color: rgb(51,50,61);
+    font-family: sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    position: relative;
+    display:inline-block;
+    overflow: hidden;
+}
+  
+.message-btn::before {
+    content: '';
+    position: absolute;
+    left: -20px;
+    bottom:0px;
+    z-index:-1;
+    width: 100%;
+    height:100%;
+    box-shadow: inset 0px 0px 0px white;
+    display: block;
+    transform: skewX(-30deg); /* slanted */
+    -webkit-transition: all 1.8s cubic-bezier(.5, .24, 0, 1);
+    transition: all 1.8s cubic-bezier(.5, .24, 0, 1)
+}
+
+.message-btn:hover::before {
+    left: 0px;
+    transform: skewX(0); /* unskew on hover */
+    box-shadow: inset 1000px 0px 0px rgb(51,50,61);
+    transition: all 1.8s cubic-bezier(.5, .24, 0, 1);
+}
+
+.message-btn:hover {
+    color: white;
+}
+  
