@@ -1,8 +1,14 @@
 #intro-section {
+    height: 100vh;
     width: 100%;
     max-width: 100vw;
     text-align: center;
     display: flex;
+    font-size: 2.5rem;
+    font-weight: 500;
+    color: white;
+    line-height: 1;
+    letter-spacing: 1px;
 }
 
 .intro-image {

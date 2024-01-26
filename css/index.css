@@ -4,6 +4,7 @@
 @import url('navbar.css');
 @import url('intro-section.css');
 @import url('fixed-btn-span.css');
+@import url('contact-page.css');
 
 body, h1, h2, p, ul, li, a, button {
     margin: 0;
@@ -23,12 +24,6 @@ body, h1, h2, p, ul, li, a, button {
 
 .heading-font {
   font-family: Ibarra Real Nova,serif;
-  font-size: 4.75rem;
-  line-height: 1;
-  font-weight: 500;
-  color: white;
-  margin-bottom: 24px;
-  letter-spacing: 1px;
 }
 
 
