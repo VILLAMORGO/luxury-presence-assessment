@@ -5,4 +5,6 @@ import './reappearing-navbar.js';
 
 // Body
 import './intro-section-loader.js';
+import './contact-form-loader.js';
 import './fixed-btn-span-loader.js';
+import './status-logic.js';
