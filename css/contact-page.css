@@ -29,6 +29,14 @@
     color: black !important;
 }
 
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    opacity: 0.8;
+    text-align: center;
+}
+
 .right-div-container {
     width: 100%;
     height: 100%;
@@ -84,6 +92,38 @@
     width: 100%; 
     color: #374151; 
 }
+
+.textbox-container {
+    display: flex;
+    margin-bottom: 0.125rem;
+    margin-top: 16px;
+}
+
+.consentCheckbox {
+    float: left;
+    position: relative;
+    border-style: solid;
+    outline-style: none
+    margin-right: 6px;
+    margin-top: 0.15rem;
+    height: 1.125rem;
+    width: 1.125rem;
+    /* border-color should have a property like border-color: #000; for example */
+    border-color: #000;
+    cursor: pointer;
+}
+
+.textbox-label {
+    display: inline-block;
+    font-size: 13px;
+    line-height: 1.3;
+    margin-bottom: 16px;
+    padding-left: 0.15rem;
+    padding-left: 1rem;
+    text-align: justify;
+    cursor: pointer;
+}
+
 
 .form-btn-style{
     padding-top: 0.75rem;
@@ -149,13 +189,20 @@
     display: block;
 }
 
+.login-box .user-box input[type="checkbox"]:checked ~ label {
+    top: -20px;
+    left: 0;
+    font-size: 16px;
+    display: block;
+}
+
 
 /* Media queries */
 
 @media (min-width: 640px) {
     .section-container {
-        padding-top: 3rem;
-        padding-bottom: 3rem;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
     }
 
     .work-with-us-paragraph {
