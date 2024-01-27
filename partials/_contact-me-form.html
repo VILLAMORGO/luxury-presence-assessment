@@ -1,4 +1,4 @@
-<main class="main-container">
+<main class="main-container background-color" id="contact-page-modal">
     <section class="section-container">
         <h1 class="contact-text-heading-styles heading-font">Work With Us</h1>
         <div class="right-div-container">
@@ -8,7 +8,12 @@
         </div>
     </section>
     <section class="section-container">
-        <h1 class="contact-text-heading-styles heading-font">Contact Me</h1>
+        <div class="contact-container">
+            <h1 class="contact-text-heading-styles heading-font">Submit A Message</h1>
+            <p><a href="tel:(925) 471-5600" class="main-font">(925) 471-5600</a></p>
+            <p><a href="mailto:Hansenpartners.re@gmail.com" class="main-font">Hansenpartners.re@gmail.com</a></p>
+            <p class="main-font">4337 Chabot Drive, Pleasanton, CA 94588Julie Hansen-Orvis | CA DRE# 00934447</p>
+        </div>
         <div class="right-div-container">
             <div class="login-box">
                 <form class="contact-form-style" id="contact-form" value="">
@@ -39,7 +44,21 @@
                                 autocomplete="off">
                         <label for="emailInput" class="text-gray-500 font-medium mt-3 code">Email Address</label>
                     </div>
-                    <div class="user-box mt-3">
+                    <div class="user-box">
+                        <div class="status-placeholder"></div>
+                        <input  id="phoneNumber"   
+                                class="form-input-style nameInput"
+                                type="number" 
+                                name="phone"
+                                aria-invalid="false" 
+                                required="" 
+                                placeholder="Your phone number..." 
+                                onfocus="this.placeholder=''"
+                                onblur="this.placeholder='Your phone number...'" 
+                                autocomplete="off">
+                        <label for="nameInput" class="form-label-style code">Phone Number</label>
+                    </div>
+                    <div class="user-box">
                         <div class="status-placeholder"></div>
                         <textarea   id="messagesTextarea" 
                                     class="form-text-area-style textarea" 
@@ -54,9 +73,27 @@
                                     autocomplete="on"></textarea>
                         <label for="messagesTextarea" class="form-label-style code">Message</label>
                     </div>
+                    <div class="textbox-container">
+                        <div class="status-placeholder"></div>
+                        <input  id="consentCheckbox"   
+                                class="consentCheckbox" 
+                                type="checkbox"
+                                name="consent"
+                                aria-invalid="false" 
+                                required="">
+                        <label for="consentCheckbox" class="code textbox-label">
+                            By sharing your contact details, you agree to Julie Hansen Partnership's Privacy Policy. Consent to receive marketing communications, including automated calls, texts, and emails, is optional. You can opt out at any time, and it's not required for purchasing products or services.
+                        </label>
+                    </div>
+                    
                     <button class="form-btn-style button" id="submit-button" style="text-align: center;">Send Message</button>
                 </form>                                      
             </div>
         </div>
     </section>
+    <span class="close-button message-btn background-color" onclick="openContactPage(false)">
+        <svg class="close-svg" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+        </svg>
+    </span>
 </main>
