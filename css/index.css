@@ -5,6 +5,7 @@
 @import url('intro-section.css');
 @import url('fixed-btn-span.css');
 @import url('contact-page.css');
+@import url('plan-section')
 
 body, h1, h2, p, ul, li, a, button {
     margin: 0;

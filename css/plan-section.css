@@ -1,0 +1,30 @@
+.marketing-container {
+    padding: 0 0 0 0;
+    text-align: center;
+}
+
+.marketing-row {
+    display: flex;
+    justify-content: flex-start;
+    align-items: stretch;
+    flex-wrap: nowrap;
+    padding: 10px;
+}
+
+.marketing-cell {
+    min-height: 75px;
+    flex-grow: 1;
+    flex-basis: 100%;
+}
+
+.marketing-image {
+    width: 30%;
+}
+
+.marketing-title {
+    padding: 0px;
+}
+
+.marketing-description {
+    padding: 0px;
+}
