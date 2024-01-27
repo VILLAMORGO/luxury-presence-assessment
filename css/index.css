@@ -12,7 +12,10 @@ body, h1, h2, p, ul, li, a, button {
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
-    color: #000000;
+}
+
+.link-font-color, a{
+  color: #000000;
 }
 
 .background-color {
